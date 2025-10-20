@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GDG MISSION CONTROL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Login Screen -->
+      <section id="login-screen" class="screen screen--active theme--dark-animated">
+        <div class="screen__content">
+          <h1 class="app-title">GDG MISSION CONTROL</h1>
+          <p class="classified">
+            🚨 CLASSIFIED ACCESS 🚨<br>
+            Only true agents can <br>
+            H4CK-TH3-CODE <br>
+          </p>
+          <form id="login-form" class="form">
+            <input
+              type="password"
+              id="password"
+              class="input"
+              placeholder="Enter access password"
+              autocomplete="off"
+              required
+              aria-label="Access password"
+            >
+            <button type="submit" class="button button--primary">Enter</button>
+            <div id="login-message" class="message" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Mission Dashboard -->
+      <section id="dashboard-screen" class="screen">
+        <div class="screen__content">
+          <h2 class="screen-title">Mission Dashboard</h2>
+          <p class="riddle">“Your next key lies where pixels tell stories and reels reveal memories.”</p>
+          <button id="solve-btn" class="button button--primary">Solve</button>
+        </div>
+      </section>
+
+       <!-- Puzzle Screen -->
+       <section id="puzzle-screen" class="screen theme--matrix">
+         <div class="screen__content">
+           <div class="mission-brief">
+             <h3 class="brief-title">🔐 MISSION BRIEFING</h3>
+             <p class="brief-subtitle">Tap the blocks to enter the secret access PIN.</p>
+           </div>
+
+           <div class="pin-grid" role="group" aria-label="PIN keypad">
+             <button class="pin" data-digit="1" aria-label="Digit 1">1</button>
+             <button class="pin" data-digit="2" aria-label="Digit 2">2</button>
+             <button class="pin" data-digit="3" aria-label="Digit 3">3</button>
+             <button class="pin" data-digit="4" aria-label="Digit 4">4</button>
+             <button class="pin" data-digit="5" aria-label="Digit 5">5</button>
+             <button class="pin" data-digit="6" aria-label="Digit 6">6</button>
+             <button class="pin" data-digit="7" aria-label="Digit 7">7</button>
+             <button class="pin" data-digit="8" aria-label="Digit 8">8</button>
+             <button class="pin" data-digit="9" aria-label="Digit 9">9</button>
+           </div>
+
+           <div class="pin-display">
+             <input id="pin-display" class="input input--readonly" type="text" value="PIN: " readonly aria-readonly="true" aria-label="Entered PIN">
+           </div>
+
+           <div id="pin-message" class="message" role="alert" aria-live="polite"></div>
+         </div>
+       </section>
+
+       <!-- Success Screen -->
+       <section id="success-screen" class="screen theme--dark-animated">
+         <div class="screen__content">
+           <h2 class="success-title">ACCESS GRANTED ✅</h2>
+           <div class="success-message">
+             <p class="final-location">Final Location: Where voices echo and lights fall — find your treasure where stories are told to all.</p>
+           </div>
+         </div>
+       </section>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+  </html>
+
+
