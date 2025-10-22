@@ -39,6 +39,15 @@ function initDashboard() {
   });
 }
 
+// Back button logic
+function initBackButton() {
+  const backBtn = document.getElementById('back-btn');
+  if (!backBtn) return;
+  backBtn.addEventListener('click', () => {
+    showScreen('dashboard-screen');
+  });
+}
+
 // Puzzle logic
 function initPuzzle() {
   const grid = document.querySelector('.pin-grid');
@@ -99,6 +108,7 @@ function initPuzzle() {
 window.addEventListener('DOMContentLoaded', () => {
   initLogin();
   initDashboard();
+  initBackButton();
   initPuzzle();
 });
 
