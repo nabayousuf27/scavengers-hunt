@@ -1,5 +1,5 @@
 // App constants
-const ACCESS_PASSWORD = 'H4CK-TH3-CODE';
+const ACCESS_PASSWORD = '430';
 const CORRECT_PIN = '123456'; // set to the Insta hidden code when known
 
 // Screen helpers
