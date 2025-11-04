@@ -1,6 +1,6 @@
 // App constants
 const ACCESS_PASSWORD = '430';
-const CORRECT_PIN = '123456'; // set to the Insta hidden code when known
+const CORRECT_PIN = '200786'; // set to the Insta hidden code when known
 
 // Screen helpers
 function showScreen(id) {
